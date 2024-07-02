@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="2" parallel="tests" thread-count="3">
+
+
+ <test name="classicCRM">
+	<parameter name="browser" value="chrome"  />
+		<parameter name="url" value="https://classic.freecrm.com/" />
+		<parameter name="username" value="RajSingh"></parameter>
+		<parameter name="Password" value="Raj123"></parameter>
+ 
+  <classes>
+   <class name="mytests.classicCRMPro" />
+  </classes>
+
+ </test>
+
+</suite>
